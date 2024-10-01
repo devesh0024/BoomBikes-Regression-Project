@@ -6,6 +6,18 @@
 
 This project aims to build a linear regression model to predict the demand for shared bikes at BoomBikes, a US-based bike-sharing service provider. The company is experiencing revenue challenges due to the pandemic and is looking to prepare for post-pandemic demand. By understanding the factors that influence bike demand, BoomBikes hopes to adapt its business strategy and gain a competitive edge.
 
+## Table of Contents
+* [Project Overview](#project-overview)
+* [Business Goal](#business-goal)
+* [Data Preparation](#data-preparation)
+* [Model Building](#model-building)
+* [Model Evaluation](#model-evaluation)
+* [Results](#results)
+* [Conclusions](#conclusions)
+* [Technologies Used](#technologies-used)
+* [Repository Structure](#repository-structure)
+* [Contact](#contact)
+
 ## Business Goal
 
 BoomBikes wants to:
@@ -13,10 +25,6 @@ BoomBikes wants to:
 - Develop a model to predict bike demand based on these variables.
 
 This model will help BoomBikes anticipate demand, adjust operations accordingly, and maximize revenue in the post-lockdown era.
-
-## Dataset
-
-The dataset used in this project contains daily bike demand data, along with factors such as weather, season, and user types (casual vs. registered). The target variable is `cnt`, which represents the total number of bike rentals.
 
 ### Features:
 - `instant`: record index
@@ -55,14 +63,22 @@ A linear regression model was built with the following steps:
 
 The model's performance was evaluated using the R-squared score, which indicates how well the independent variables explain the variance in bike demand.
 
-
 ## Results
 
 R-squared score: 0.8622. The residuals were also checked for normality using histograms and QQ plots to ensure that the model assumptions were met.
 
-## Conclusion
+## Conclusions
+- The linear regression model explains approximately 86% of the variance in bike demand based on independent variables, indicating a strong relationship between the features and bike rentals.
+- Significant factors affecting bike demand include temperature, weather situation, and seasonal effects.
+- The model's predictions will assist BoomBikes in effectively planning for changes in customer demand.
+- Understanding demand dynamics will enable BoomBikes to enhance customer satisfaction and increase profitability.
 
-The linear regression model explains about 86% of the variance in bike demand based on the features in the dataset. This model will help BoomBikes predict demand more accurately and improve their business strategy as they prepare for post-pandemic recovery.
+## Technologies Used
+- pandas - version 1.3.3
+- numpy - version 1.21.2
+- matplotlib - version 3.4.3
+- seaborn - version 0.11.2
+- scikit-learn - version 0.24.2 
 
 ## Repository Structure
 
@@ -70,3 +86,7 @@ The linear regression model explains about 86% of the variance in bike demand ba
 - `day.csv`: The dataset used for analysis and model building.
 - `README.md`: This file.
 - `subjective_answers.pdf`: A PDF file containing all subjective answers.
+
+## Contact
+
+Created by [@devesh0024](https://github.com/devesh0024) - feel free to contact me!
